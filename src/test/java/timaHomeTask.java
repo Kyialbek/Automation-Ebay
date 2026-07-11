@@ -37,10 +37,10 @@ public class timaHomeTask {
 		signIn.click();
 		Thread.sleep(1000);
 		WebElement email = driver.findElement(By.id("ap_email"));
-		email.sendKeys("ustabekovb@gmail.com");
+		email.sendKeys(System.getProperty("amazon.email", "change-me@example.com"));
 		Thread.sleep(1000);
 		WebElement password = driver.findElement(By.id("ap_password"));
-		password.sendKeys("ustabekov94");
+		password.sendKeys(System.getProperty("amazon.password", "change-me"));
 		Thread.sleep(1000);
 		WebElement signInButton = driver.findElement(By.id("signInSubmit"));
 		signInButton.click();

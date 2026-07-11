@@ -34,7 +34,7 @@ public class ebayAutonation {
 	       Thread.sleep(1000);
 	       List<WebElement> elementList=driver.findElements(By.xpath("//h3[@class='s-item__title']"));
 	       System.out.println(elementList.size());
-	      // Assert.assertEquals(“Try again you found “+elementList.size()+” but expected 25",25,elementList.size());
+	       // Legacy assertion example removed: it contained non-UTF-8 quote characters.
 	       if (elementList.size()>10){
 	           System.out.println("verified");
 	       }else {
@@ -55,7 +55,7 @@ public class ebayAutonation {
 	       Thread.sleep(1000);
 	       List<WebElement> elementList=driver.findElements(By.xpath("//h3[@class='s-item__title']"));
 	       System.out.println(elementList.size());
-	       // Assert.assertEquals(“Try again you found “+elementList.size()+” but expected 25",25,elementList.size());
+	       // Legacy assertion example removed: it contained non-UTF-8 quote characters.
 	       if (elementList.size()>10){
 	           System.out.println("verified");
 	       }else {

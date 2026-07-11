@@ -24,7 +24,7 @@ public class classMlass {
 		Thread.sleep(1000);
 		WebElement search = driver.findElement(By.id("twotabsearchtextbox"));
 		search.sendKeys("airpod"+Keys.ENTER);
-		//WebElement rating = driver.findElement(By.xpath("//span[.=‘Apple iPad (Wi-Fi, 32GB) - Silver (Latest Model)’]/parent::a[@class=‘a-link-normal a-text-normal’]/parent::h2/parent::div[@class=‘a-section a-spacing-none’]/following-sibling::div/child::div/child::span/following-sibling::span/child::a/child::span”));
+		// Legacy locator experiment removed: it contained non-UTF-8 quote characters.
 		
 		
 	}
